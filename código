@@ -1,5 +1,4 @@
-#instalar as bibliotecas pymongo e tabulate
-
+#instalar bibliotecas pymongo e tabulate primeiro
 
 from pymongo import MongoClient
 from datetime import datetime
@@ -7,7 +6,7 @@ from tabulate import tabulate
 
 # Conectar ao MongoDB (ajuste a URI se estiver usando um banco de dados na nuvem)
 client = MongoClient('mongodb+srv://Anaricetti:20ana03@anaricetti.fmelj.mongodb.net/')
-db = client['aula']
+db = client['biblioteca']
 
 # Coleções
 livros_collection = db['livros']
